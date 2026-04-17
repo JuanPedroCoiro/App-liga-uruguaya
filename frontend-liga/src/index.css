@@ -1,0 +1,12 @@
+@import "tailwindcss";
+/*
+
+**Ahora la estructura de carpetas** que vamos a usar:
+```
+src/
+  api/          ← funciones para llamar a la API
+  components/   ← componentes reutilizables
+  pages/        ← una por sección
+  hooks/        ← lógica reutilizable (WebSocket, fetch)
+  App.jsx
+  main.jsx*/
