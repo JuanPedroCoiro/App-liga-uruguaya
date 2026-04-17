@@ -68,7 +68,7 @@ cp .env.example .env
 # Editá .env con tus credenciales de PostgreSQL
 
 # Iniciar el servidor
-uvicorn main:app --reload
+uvicorn app.main:app --reload
 ```
 
 La API estará disponible en `http://localhost:8000`.  
