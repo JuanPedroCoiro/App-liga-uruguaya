@@ -23,12 +23,17 @@ futbol-uruguayo/
 ├── backend/
 │   ├── main.py
 │   ├── models/
-│   ├── routes/
-│   └── database.py
+│   ├── routers/
+|   |── schemas/
+│   └── database/
 ├── frontend/
 │   ├── pages/
 │   ├── components/
-│   └── public/
+│   |── public/
+│   ├── api/
+│   ├── assets/
+│   |── context/
+│   |── hooks/
 └── README.md
 ```
 
@@ -48,8 +53,8 @@ futbol-uruguayo/
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/JuanPedroCoiro/futbol-uruguayo.git
-cd futbol-uruguayo/backend
+git clone https://github.com/JuanPedroCoiro/App-liga-uruguaya.git
+cd Backend-LigaUruguaya
 
 # Crear entorno virtual
 python -m venv venv
@@ -104,8 +109,8 @@ alembic upgrade head
 Creá un archivo `.env` en la carpeta `backend/` con las siguientes variables:
 
 ```env
-DATABASE_URL=postgresql://usuario:contraseña@localhost:5432/futbol_uruguayo
-SECRET_KEY=tu_clave_secreta
+DATABASE_URL=postgresql://postgres@localhost:5432/liga_uruguaya
+SECRET_KEY=c0b079d8e8df19049a2d2f568f02c635cad032f60217e5db85886ca9bff06ec7
 ```
 
 ---
